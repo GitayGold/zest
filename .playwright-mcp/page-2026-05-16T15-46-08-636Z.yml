@@ -1,0 +1,130 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "ZEST" [ref=e3] [cursor=pointer]:
+      - /url: "#"
+    - navigation [ref=e4]:
+      - link "Flavors" [ref=e5] [cursor=pointer]:
+        - /url: "#flavors"
+      - link "About" [ref=e6] [cursor=pointer]:
+        - /url: "#about"
+      - link "Get Zest" [ref=e7] [cursor=pointer]:
+        - /url: "#cta"
+    - button "Enable sound" [ref=e8]:
+      - img [ref=e9]
+  - main [ref=e13]:
+    - region "Hero" [ref=e14]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: Premium Sparkling Water
+        - heading "Flavors that shouldn't work. Until they do." [level=1] [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Flavors
+            - generic [ref=e20]: that
+            - generic [ref=e21]: shouldn't
+            - generic [ref=e22]: work.
+          - generic [ref=e23]:
+            - generic [ref=e24]: Until
+            - generic [ref=e25]: they
+            - generic [ref=e26]: do.
+        - paragraph [ref=e27]: Sparkling water for people who are bored of sparkling water.
+        - link "Pick your flavor" [ref=e28] [cursor=pointer]:
+          - /url: "#flavors"
+          - text: Pick your flavor
+          - img [ref=e29]
+      - generic [ref=e32]: Scroll
+    - region "Flavor showcase" [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: Sparkling Water
+            - heading "MANGO CHILI" [level=2] [ref=e40]
+            - paragraph [ref=e41]: “Sweet enough to trust. Hot enough to remember.”
+            - paragraph [ref=e42]: Alphonso mango. Kashmiri chili. Zero regrets.
+            - link "Order Now" [ref=e43] [cursor=pointer]:
+              - /url: "#cta"
+              - text: Order Now
+              - img [ref=e44]
+          - img "MANGO CHILI sparkling water can" [ref=e48]
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: Sparkling Water
+            - heading "CUCUMBER YUZU" [level=2] [ref=e53]
+            - paragraph [ref=e54]: “The most refreshing thing you've ever done wrong.”
+            - paragraph [ref=e55]: Garden cucumber. Japanese yuzu. Aggressively clean.
+            - link "Order Now" [ref=e56] [cursor=pointer]:
+              - /url: "#cta"
+              - text: Order Now
+              - img [ref=e57]
+          - generic [ref=e59]:
+            - generic:
+              - img "CUCUMBER YUZU sparkling water can"
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - paragraph [ref=e63]: Sparkling Water
+            - heading "ROSE LYCHEE" [level=2] [ref=e64]
+            - paragraph [ref=e65]: “Romantic. Slightly unhinged. Highly recommended.”
+            - paragraph [ref=e66]: Damascus rose water. Fresh lychee. No explanation needed.
+            - link "Order Now" [ref=e67] [cursor=pointer]:
+              - /url: "#cta"
+              - text: Order Now
+              - img [ref=e68]
+          - generic [ref=e70]:
+            - generic:
+              - img "ROSE LYCHEE sparkling water can"
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - paragraph [ref=e74]: Sparkling Water
+            - heading "MIDNIGHT BLACKBERRY" [level=2] [ref=e75]
+            - paragraph [ref=e76]: “For people who drink sparkling water at midnight.”
+            - paragraph [ref=e77]: Wild blackberry. Hint of black pepper. Disturbingly smooth.
+            - link "Order Now" [ref=e78] [cursor=pointer]:
+              - /url: "#cta"
+              - text: Order Now
+              - img [ref=e79]
+          - generic [ref=e81]:
+            - generic:
+              - img "MIDNIGHT BLACKBERRY sparkling water can"
+      - generic "Flavor navigation" [ref=e82]:
+        - button "Go to MANGO CHILI" [ref=e83] [cursor=pointer]
+        - button "Go to CUCUMBER YUZU" [ref=e85] [cursor=pointer]
+        - button "Go to ROSE LYCHEE" [ref=e87] [cursor=pointer]
+        - button "Go to MIDNIGHT BLACKBERRY" [ref=e89] [cursor=pointer]
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - paragraph [ref=e93]: Our Philosophy
+        - heading "\"We didn't set out to make weird water.\"" [level=2] [ref=e94]
+        - generic [ref=e95]:
+          - paragraph [ref=e96]: We set out to make water worth talking about.
+          - paragraph [ref=e97]: Turns out those are the same thing.
+          - paragraph [ref=e98]: ZEST is sparkling water built around flavor combinations
+          - paragraph [ref=e99]: that sound wrong in a text message and taste right in real life.
+          - paragraph [ref=e100]: No artificial anything. No safe choices.
+          - paragraph [ref=e101]: Just water that has opinions.
+      - generic: ZEST
+    - generic [ref=e102]:
+      - paragraph [ref=e103]: Real humans. Real opinions.
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]: "\""
+          - paragraph [ref=e107]: I bought it as a joke. I subscribed the next day.
+          - paragraph [ref=e108]: — Maya R., Tel Aviv
+        - generic [ref=e109]:
+          - generic [ref=e110]: "\""
+          - paragraph [ref=e111]: The Mango Chili one made me call my mom.
+          - paragraph [ref=e112]: — James K., London
+        - generic [ref=e113]:
+          - generic [ref=e114]: "\""
+          - paragraph [ref=e115]: I don't even like sparkling water. I like ZEST.
+          - paragraph [ref=e116]: — Sofia M., Barcelona
+    - generic [ref=e117]:
+      - generic:
+        - generic: ZEST
+      - generic [ref=e118]:
+        - heading "Your first case ships free." [level=2] [ref=e119]
+        - paragraph [ref=e120]: 4 flavors. 24 cans. One very good decision.
+        - generic [ref=e121]:
+          - generic [ref=e122]: Email address
+          - textbox "Email address" [ref=e123]:
+            - /placeholder: your@email.com
+          - button "Send me ZEST" [ref=e124]
+        - paragraph [ref=e125]: No commitment. Cancel whenever. We'll still think you made the right call.
+  - alert [ref=e126]

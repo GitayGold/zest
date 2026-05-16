@@ -1,0 +1,154 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "ZEST" [ref=e3] [cursor=pointer]:
+      - /url: "#"
+    - navigation [ref=e4]:
+      - link "Flavors" [ref=e5] [cursor=pointer]:
+        - /url: "#flavors"
+      - link "About" [ref=e6] [cursor=pointer]:
+        - /url: "#about"
+      - link "Get Zest" [ref=e7] [cursor=pointer]:
+        - /url: "#cta"
+    - button "Enable sound" [ref=e8]:
+      - img [ref=e9]
+  - main [ref=e13]:
+    - region "Hero" [ref=e14]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: Premium Sparkling Water
+        - heading "Flavors that shouldn't work. Until they do." [level=1] [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Flavors
+            - generic [ref=e20]: that
+            - generic [ref=e21]: shouldn't
+            - generic [ref=e22]: work.
+          - generic [ref=e23]:
+            - generic [ref=e24]: Until
+            - generic [ref=e25]: they
+            - generic [ref=e26]: do.
+        - paragraph [ref=e27]: Sparkling water for people who are bored of sparkling water.
+        - link "Pick your flavor" [ref=e28] [cursor=pointer]:
+          - /url: "#flavors"
+          - text: Pick your flavor
+          - img [ref=e29]
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img "MANGO CHILI"
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img "CUCUMBER YUZU"
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img "ROSE LYCHEE"
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img "MIDNIGHT BLACKBERRY"
+      - generic [ref=e32]: Scroll
+    - region "Flavor showcase" [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: Sparkling Water
+            - heading "MANGO CHILI" [level=2] [ref=e40]
+            - paragraph [ref=e41]: “Sweet enough to trust. Hot enough to remember.”
+            - paragraph [ref=e42]: Alphonso mango. Kashmiri chili. Zero regrets.
+            - link "Order Now" [ref=e43] [cursor=pointer]:
+              - /url: "#cta"
+              - text: Order Now
+              - img [ref=e44]
+          - img "MANGO CHILI sparkling water can" [ref=e49]
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - paragraph [ref=e53]: Sparkling Water
+            - heading "CUCUMBER YUZU" [level=2] [ref=e54]
+            - paragraph [ref=e55]: “The most refreshing thing you've ever done wrong.”
+            - paragraph [ref=e56]: Garden cucumber. Japanese yuzu. Aggressively clean.
+            - link "Order Now" [ref=e57] [cursor=pointer]:
+              - /url: "#cta"
+              - text: Order Now
+              - img [ref=e58]
+          - generic [ref=e60]:
+            - generic:
+              - generic:
+                - img "CUCUMBER YUZU sparkling water can"
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: Sparkling Water
+            - heading "ROSE LYCHEE" [level=2] [ref=e65]
+            - paragraph [ref=e66]: “Romantic. Slightly unhinged. Highly recommended.”
+            - paragraph [ref=e67]: Damascus rose water. Fresh lychee. No explanation needed.
+            - link "Order Now" [ref=e68] [cursor=pointer]:
+              - /url: "#cta"
+              - text: Order Now
+              - img [ref=e69]
+          - generic [ref=e71]:
+            - generic:
+              - generic:
+                - img "ROSE LYCHEE sparkling water can"
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - paragraph [ref=e75]: Sparkling Water
+            - heading "MIDNIGHT BLACKBERRY" [level=2] [ref=e76]
+            - paragraph [ref=e77]: “For people who drink sparkling water at midnight.”
+            - paragraph [ref=e78]: Wild blackberry. Hint of black pepper. Disturbingly smooth.
+            - link "Order Now" [ref=e79] [cursor=pointer]:
+              - /url: "#cta"
+              - text: Order Now
+              - img [ref=e80]
+          - generic [ref=e82]:
+            - generic:
+              - generic:
+                - img "MIDNIGHT BLACKBERRY sparkling water can"
+      - generic "Flavor navigation" [ref=e83]:
+        - button "Go to MANGO CHILI" [ref=e84] [cursor=pointer]
+        - button "Go to CUCUMBER YUZU" [ref=e86] [cursor=pointer]
+        - button "Go to ROSE LYCHEE" [ref=e88] [cursor=pointer]
+        - button "Go to MIDNIGHT BLACKBERRY" [ref=e90] [cursor=pointer]
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - paragraph [ref=e94]: Our Philosophy
+        - heading "\"We didn't set out to make weird water.\"" [level=2] [ref=e95]
+        - generic [ref=e96]:
+          - paragraph [ref=e97]: We set out to make water worth talking about.
+          - paragraph [ref=e98]: Turns out those are the same thing.
+          - paragraph [ref=e99]: ZEST is sparkling water built around flavor combinations
+          - paragraph [ref=e100]: that sound wrong in a text message and taste right in real life.
+          - paragraph [ref=e101]: No artificial anything. No safe choices.
+          - paragraph [ref=e102]: Just water that has opinions.
+      - generic: ZEST
+    - generic [ref=e103]:
+      - paragraph [ref=e104]: Real humans. Real opinions.
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: "\""
+          - paragraph [ref=e108]: I bought it as a joke. I subscribed the next day.
+          - paragraph [ref=e109]: — Maya R., Tel Aviv
+        - generic [ref=e110]:
+          - generic [ref=e111]: "\""
+          - paragraph [ref=e112]: The Mango Chili one made me call my mom.
+          - paragraph [ref=e113]: — James K., London
+        - generic [ref=e114]:
+          - generic [ref=e115]: "\""
+          - paragraph [ref=e116]: I don't even like sparkling water. I like ZEST.
+          - paragraph [ref=e117]: — Sofia M., Barcelona
+    - generic [ref=e118]:
+      - generic:
+        - generic: ZEST
+      - generic [ref=e119]:
+        - heading "Your first case ships free." [level=2] [ref=e120]
+        - paragraph [ref=e121]: 4 flavors. 24 cans. One very good decision.
+        - generic [ref=e122]:
+          - generic [ref=e123]: Email address
+          - textbox "Email address" [ref=e124]:
+            - /placeholder: your@email.com
+          - button "Send me ZEST" [ref=e125]
+        - paragraph [ref=e126]: No commitment. Cancel whenever. We'll still think you made the right call.
+  - button "Open Next.js Dev Tools" [ref=e132] [cursor=pointer]:
+    - img [ref=e133]

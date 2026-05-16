@@ -1,0 +1,297 @@
+@import "tailwindcss";
+
+/* ─── Flavor Color System ──────────────────────────────────────────── */
+
+:root {
+  --flavor-bg: #FF6B2B;
+  --flavor-accent: #FFE14D;
+  --flavor-text: #ffffff;
+
+  --font-display: var(--font-bricolage);
+  --font-body: var(--font-dm-sans);
+}
+
+/* All flavor-driven color transitions animate at 600ms */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  transition:
+    background-color 600ms ease,
+    color 600ms ease;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--flavor-text);
+  background-color: var(--flavor-bg);
+  transition: background-color 600ms ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ─── Typography Utilities ─────────────────────────────────────────── */
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* ─── Keyframes ────────────────────────────────────────────────────── */
+
+@keyframes wordReveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes scrollPulse {
+  0% { transform: scaleY(0); transform-origin: top; opacity: 0.6; }
+  50% { transform: scaleY(1); transform-origin: top; opacity: 1; }
+  100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
+}
+
+/* ─── Word Reveal ──────────────────────────────────────────────────── */
+
+.word-reveal {
+  display: inline-block;
+  opacity: 0;
+  animation: wordReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ─── Can Float Animation ──────────────────────────────────────────── */
+
+.can-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ─── Scroll Triggered Animations ─────────────────────────────────── */
+
+.line-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.line-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.flavor-name-reveal {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.flavor-name-reveal.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ─── Carousel ─────────────────────────────────────────────────────── */
+
+.carousel-track {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 100vh;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex: 0 0 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .carousel-track {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100svh;
+  }
+
+  .carousel-slide {
+    flex: 0 0 100svh;
+    min-width: 100vw;
+    height: 100svh;
+  }
+}
+
+/* ─── Custom Cursor ────────────────────────────────────────────────── */
+
+.custom-cursor {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--flavor-accent);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition:
+    background-color 600ms ease,
+    width 150ms ease,
+    height 150ms ease;
+}
+
+.custom-cursor.is-hovering {
+  width: 18px;
+  height: 18px;
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+/* ─── Flavor Dots ──────────────────────────────────────────────────── */
+
+.flavor-dot-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.flavor-dot-inner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition:
+    width 300ms ease,
+    height 300ms ease,
+    background-color 600ms ease;
+}
+
+.flavor-dot-btn.is-active .flavor-dot-inner {
+  width: 12px;
+  height: 12px;
+  background-color: var(--flavor-accent);
+}
+
+/* ─── Nav ──────────────────────────────────────────────────────────── */
+
+.nav-logo {
+  color: var(--flavor-accent);
+  border-color: var(--flavor-accent);
+  transition: color 600ms ease, border-color 600ms ease;
+}
+
+/* ─── Accent Color Utilities ───────────────────────────────────────── */
+
+.accent-color {
+  color: var(--flavor-accent);
+  transition: color 600ms ease;
+}
+
+.accent-bg {
+  background-color: var(--flavor-accent);
+  transition: background-color 600ms ease;
+}
+
+.accent-border {
+  border-color: var(--flavor-accent);
+  transition: border-color 600ms ease;
+}
+
+/* ─── CTA Background Transition ────────────────────────────────────── */
+
+.cta-section {
+  transition: background-color 600ms ease;
+}
+
+/* ─── Reduced Motion Overrides ─────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .word-reveal {
+    opacity: 1;
+  }
+
+  .can-float {
+    animation: none;
+  }
+
+  .line-reveal,
+  .card-reveal,
+  .flavor-name-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
